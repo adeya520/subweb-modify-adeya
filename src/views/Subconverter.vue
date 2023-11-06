@@ -469,7 +469,6 @@ export default {
           {value: "https://www.nameless13.com"},
           {value: "https://sub.xeton.dev"},
           {value: "https://api.wcc.best"},
-          {value: "https://api.dler.io"},
         ],
         remoteConfig: [
           {
