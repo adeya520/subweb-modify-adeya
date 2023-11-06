@@ -242,61 +242,14 @@
                 >从URL解析</el-button>
               </el-form-item>
               <el-form-item label-width="0px" style="text-align: center">
-                <el-button
-                    style="width: 250px;"
-                    type="success"
-                    icon="el-icon-video-play"
-                    @click="centerDialogVisible = true"
-                >保姆级视频教程
-                </el-button>
+               
               </el-form-item>
             </el-form>
           </el-container>
         </el-card>
       </el-col>
     </el-row>
-   <el-dialog
-        title="请选择需要观看的视频教程"
-        :visible.sync="centerDialogVisible"
-        :show-close="false"
-        width="40vh"
-        top="30vh"
-        center>
-     <div label-width="0px" style="text-align: center">
-      <el-button
-          style="width: 200px;"
-          type="primary"
-          icon="el-icon-video-play"
-          @click="gotoBasicVideo();centerDialogVisible = false"
-      >基础视频教程
-      </el-button>
-     </div>
-     <div label-width="0px" style="text-align: center;margin: 3vh 0 2vh">
-      <el-button
-          style="width: 200px;"
-          type="danger"
-          icon="el-icon-video-play"
-          @click="gotoAdvancedVideo();centerDialogVisible = false"
-      >进阶视频教程
-      </el-button>
-     </div>
-     <div label-width="0px" style="text-align: center;margin: 3vh 0 2vh">
-      <el-button
-          style="width: 200px;"
-          type="warning"
-          icon="el-icon-download"
-          @click="toolsDown"
-      >代理工具集合
-      </el-button>
-     </div> 
-    </el-dialog>
-    <el-dialog
-        :visible.sync="dialogUploadConfigVisible"
-        :show-close="false"
-        :close-on-click-modal="false"
-        :close-on-press-escape="false"
-        width="80%"
-    >
+   
       <el-tabs v-model="activeName" type="card">
         <el-tab-pane label="远程配置上传" name="first">
           <el-link type="danger" :href="sampleConfig" style="margin-bottom: 15px" target="_blank" icon="el-icon-info">
@@ -455,12 +408,13 @@ export default {
           "自动判断客户端": "auto",
         },
         shortTypes: {
-          "默认": "",
-          "adeya自用短链接": "",
+          "默认": "http://abb.xyz/",
+          "abb.xyz": "http://abb.xyz/",
         },
         customBackend: {
           "默认": "",
-          "adeya自用后端": "http://adeyan.x3322.net:2558",
+          "192.168.31.95": "http://192.168.31.95:2556",
+          "adeyan.x3322.net": "http://adeyan.x3322.net:2556",
         },
         backendOptions: [
           {value: "https://api.v1.mk"},
@@ -868,8 +822,8 @@ export default {
       form: {
         sourceSubUrl: "",
         clientType: "",
-        customBackend: this.getUrlParam() == "" ? "https://api.v1.mk" : this.getUrlParam(),
-        shortType: "https://v1.mk/short",
+        customBackend: this.getUrlParam() == "" ? "abc.com" : this.getUrlParam(),
+        shortType: "abc.com",
         remoteConfig: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full_NoAuto.ini",
         excludeRemarks: "",
         includeRemarks: "",
