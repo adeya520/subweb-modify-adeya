@@ -27,4 +27,4 @@ jobs:
         context: .
         platforms: linux/amd64,linux/arm,linux/arm64
         push: true
-        tags: ${{ secrets.DOCKERHUB_USERNAME }}/subweb-modify-ade:latest
+        tags: ${{ secrets.DOCKERHUB_USERNAME }}/subweb-modify-adeya:latest
