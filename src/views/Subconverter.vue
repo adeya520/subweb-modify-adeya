@@ -94,7 +94,7 @@
                       <el-input v-model="form.excludeRemarks" placeholder="要排除的节点，支持正则"/>
                     </el-form-item>
                     <el-form-item label="节点命名:">
-                      <el-input v-model="form.rename" placeholder="举例：`a@b``1@2`，|符可用\转义"/>
+                      <el-input v-model="form.rename" placeholder="举例：`a@b``1@2`,添加机场名字：^(.*)@【机场名】$1，|符可用\转义"/>
                     </el-form-item>       
                     <el-form-item label="远程设备:">
                       <el-input v-model="form.devid" placeholder="用于设置QuantumultX的远程设备ID"/>
@@ -965,7 +965,7 @@ export default {
       window.open(downld);
     },
     gotoBasicVideo() {
-      this.$alert("别忘了关注友善的肥羊哦！", {
+      this.$alert("我也不知道显示在哪", {
         type: "warning",
         confirmButtonText: '确定',
         customClass: 'msgbox',
@@ -976,7 +976,7 @@ export default {
           });
     },
     gotoAdvancedVideo() {
-      this.$alert("别忘了关注友善的肥羊哦！", {
+      this.$alert("我也不知道显示在哪", {
         type: "warning",
         confirmButtonText: '确定',
         customClass: 'msgbox',
