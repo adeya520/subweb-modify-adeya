@@ -430,7 +430,7 @@ export default {
             options: [
             {
                 label: "ACL4SSR_Online_adeya",
-                value: "https://raw.githubusercontent.com/adeya520/dingyue_url/main/ACL4SSR_Online_adeya.ini?token=GHSAT0AAAAAACJ5ZHKHXBW7JETJ4DJTIOAKZKLWUUA"
+                value: "https://raw.githubusercontent.com/adeya520/ACL4SSR_Online_adeya/main/ACL4SSR_Online_adeya.ini"
               },
               {
                 label: "默认",
