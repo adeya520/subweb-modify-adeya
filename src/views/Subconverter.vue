@@ -428,6 +428,10 @@ export default {
           {
             label: "通用",
             options: [
+            {
+                label: "ACL4SSR_Online_adeya",
+                value: "https://raw.githubusercontent.com/adeya520/dingyue_url/main/ACL4SSR_Online_adeya.ini?token=GHSAT0AAAAAACJ5ZHKHXBW7JETJ4DJTIOAKZKLWUUA"
+              },
               {
                 label: "默认",
                 value: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full_NoAuto.ini"
